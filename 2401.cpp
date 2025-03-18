@@ -22,3 +22,21 @@ class Solution {
         // output array
     
     };
+
+    int main() {
+        int n;
+        cout << "Enter the size of the array: ";
+        cin >> n;
+    
+        vector<int> nums(n);
+  
+        cout << "Enter the " << n << " elements of the array:" << endl;
+        for (int i = 0; i < n; i++) {
+            cin >> nums[i];
+        }
+        Solution sol;
+        int result = sol.longestNiceSubarray(nums);
+        cout << "The length of the longest nice subarray is: " << result << endl;
+    
+        return 0;
+    }
